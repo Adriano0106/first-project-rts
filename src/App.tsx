@@ -1,9 +1,9 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = React.useState(0)
+  const [count, setCount] = React.useState(0);
 
   return (
     <div className="App">
@@ -15,9 +15,10 @@ function App() {
             count is: {count}
           </button>
         </p>
+        <p>by: Adriano Andrade</p>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
