@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import Button from "@mui/material/Button";
+import ProfilePhoto from "./images/fotoAdriano01.jpg";
 
 import "./App.css";
 
@@ -20,7 +21,28 @@ function App() {
             count is: {count}
           </Button>
         </p>
-        <p>by: Adriano Andrade</p>
+
+        <div className="profile">
+          <div className="profile__info">
+            <div className="profile__picture">
+              <img
+                src={ProfilePhoto}
+                className="profile__picture-img"
+                alt="Profile-photo"
+              />
+            </div>
+            <div className="profile__text">
+              <div className="profile__name">Adriano Andrade da Silva</div>
+              <div className="profile__bio">Desenvolvedor Front End</div>
+              <div className="profile__skills">
+                <div className="item__skills">JavaScript</div>
+                <div className="item__skills">TypeScript</div>
+                <div className="item__skills">React</div>
+                <div className="item__skills">Sass/Scss</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
     </div>
   );

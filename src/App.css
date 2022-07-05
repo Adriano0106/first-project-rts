@@ -41,3 +41,80 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+.profile {
+  width: max-content;
+}
+
+.profile__info {
+  display: flex;
+  position: relative;
+}
+
+.profile__picture {
+  position: relative;
+  width: 50%;
+  padding: 0 20px;
+}
+
+.profile__picture-img {
+  position: relative;
+  width: -webkit-fill-available;
+  max-width: 300px;
+  border-radius: 16px;
+}
+
+.profile__text {
+  width: 50%;
+  text-align: center;
+  padding: 0 20px;
+
+}
+.profile__name {
+  font-size: 26px;
+  line-height: 36px;
+  width: 100%;
+  font-weight: 700;
+}
+.profile__bio {
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+}
+.profile__skills {
+  display: flex;
+  justify-content: space-between;
+}
+.item__skills {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (max-width: 600px) {
+  .profile__info {
+    display: block;
+  }
+
+  .profile__picture {
+    width: 100%;
+    padding: 0;
+  }
+
+  .profile__picture-img {
+    width: -webkit-fill-available;
+  }
+
+  .profile__text {
+    width: 100%;
+    padding: 0;
+
+  }
+  .profile__name {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .profile__bio {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
